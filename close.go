@@ -11,7 +11,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/coder/websocket/internal/errd"
+	"nhooyr.io/websocket/internal/errd"
 )
 
 // StatusCode represents a WebSocket status code.

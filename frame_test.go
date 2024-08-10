@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coder/websocket/internal/test/assert"
+	"nhooyr.io/websocket/internal/test/assert"
 )
 
 func TestHeader(t *testing.T) {

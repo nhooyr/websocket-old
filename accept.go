@@ -17,7 +17,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/coder/websocket/internal/errd"
+	"nhooyr.io/websocket/internal/errd"
 )
 
 // AcceptOptions represents Accept's options.

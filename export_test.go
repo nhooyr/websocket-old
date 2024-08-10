@@ -6,7 +6,7 @@ package websocket
 import (
 	"net"
 
-	"github.com/coder/websocket/internal/util"
+	"nhooyr.io/websocket/internal/util"
 )
 
 func (c *Conn) RecordBytesWritten() *int {
