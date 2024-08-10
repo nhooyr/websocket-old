@@ -3,6 +3,8 @@
 
 // Package websocket implements the RFC 6455 WebSocket protocol.
 //
+// Deprecated: coder now maintains this library at github.com/coder/websocket.
+//
 // https://tools.ietf.org/html/rfc6455
 //
 // Use Dial to dial a WebSocket server.
@@ -31,5 +33,4 @@
 //   - Conn.CloseNow is Close(StatusGoingAway, "")
 //   - HTTPClient, HTTPHeader and CompressionMode in DialOptions are no-op
 //   - *http.Response from Dial is &http.Response{} with a 101 status code on success
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
 package websocket // import "nhooyr.io/websocket"
