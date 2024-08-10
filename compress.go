@@ -12,7 +12,7 @@ import (
 // CompressionMode represents the modes available to the permessage-deflate extension.
 // See https://tools.ietf.org/html/rfc7692
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // Works in all modern browsers except Safari which does not implement the permessage-deflate extension.
 //

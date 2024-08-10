@@ -18,7 +18,7 @@ import (
 // MessageType represents the type of a WebSocket message.
 // See https://tools.ietf.org/html/rfc6455#section-5.6
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 type MessageType int
 
 // MessageType constants.
@@ -32,7 +32,7 @@ const (
 // Conn represents a WebSocket connection.
 // All methods may be called concurrently except for Reader and Read.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // You must always read from the connection. Otherwise control
 // frames will not be handled. See Reader and CloseRead.
@@ -145,7 +145,7 @@ func newConn(cfg connConfig) *Conn {
 // Subprotocol returns the negotiated subprotocol.
 // An empty string means the default protocol.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 func (c *Conn) Subprotocol() string {
 	return c.subprotocol
 }
@@ -204,7 +204,7 @@ func (c *Conn) flate() bool {
 // not read from the connection but instead waits for a Reader call
 // to read the pong.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // TCP Keepalives should suffice for most use cases.
 func (c *Conn) Ping(ctx context.Context) error {

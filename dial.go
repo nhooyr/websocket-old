@@ -22,7 +22,7 @@ import (
 
 // DialOptions represents Dial's options.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 type DialOptions struct {
 	// HTTPClient is used for the connection.
 	// Its Transport must return writable bodies for WebSocket handshakes.
@@ -93,7 +93,7 @@ func (opts *DialOptions) cloneWithDefaults(ctx context.Context) (context.Context
 
 // Dial performs a WebSocket handshake on url.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // The response is the WebSocket handshake response from the server.
 // You never need to close resp.Body yourself.

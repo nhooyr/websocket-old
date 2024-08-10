@@ -3,7 +3,7 @@
 
 // Package websocket implements the RFC 6455 WebSocket protocol.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // https://tools.ietf.org/html/rfc6455
 //

@@ -1,3 +1,1 @@
-# websocket
-
-https://github.com/coder/websocket
+deprecated: Use https://github.com/coder/websocket instead

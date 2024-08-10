@@ -17,7 +17,7 @@ import (
 // StatusCode represents a WebSocket status code.
 // https://tools.ietf.org/html/rfc6455#section-7.4
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 type StatusCode int
 
 // https://www.iana.org/assignments/websocket/websocket.xhtml#close-code-number
@@ -63,7 +63,7 @@ const (
 
 // CloseError is returned when the connection is closed with a status and reason.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // Use Go 1.13's errors.As to check for this error.
 // Also see the CloseStatus helper.
@@ -72,7 +72,7 @@ type CloseError struct {
 	Reason string
 }
 
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 func (ce CloseError) Error() string {
 	return fmt.Sprintf("status = %v and reason = %q", ce.Code, ce.Reason)
 }
@@ -80,7 +80,7 @@ func (ce CloseError) Error() string {
 // CloseStatus is a convenience wrapper around Go 1.13's errors.As to grab
 // the status code from a CloseError.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // -1 will be returned if the passed error is nil or not a CloseError.
 func CloseStatus(err error) StatusCode {
@@ -93,7 +93,7 @@ func CloseStatus(err error) StatusCode {
 
 // Close performs the WebSocket close handshake with the given status code and reason.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 //
 // It will write a WebSocket close frame with a timeout of 5s and then wait 5s for
 // the peer to send a close frame.
@@ -140,7 +140,7 @@ func (c *Conn) Close(code StatusCode, reason string) (err error) {
 // CloseNow closes the WebSocket connection without attempting a close handshake.
 // Use when you do not want the overhead of the close handshake.
 //
-// Deprecated: coder now maintains this library at github.com/coder/websocket.
+// Deprecated: coder now maintains this library at https://github.com/coder/websocket.
 func (c *Conn) CloseNow() (err error) {
 	defer errd.Wrap(&err, "failed to immediately close WebSocket")
 
